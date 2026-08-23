@@ -3571,9 +3571,10 @@ button {
   }
 
   .hero__info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
   }
 
   .hero__visual {
@@ -4084,19 +4085,23 @@ button {
   }
 
   .hero__info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
     width: 100%;
     margin-top: 25px;
   }
 
   .hero__patients {
-    width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
   }
 
   .hero__video {
-    width: 100%;
+    flex: 0 0 auto;
+    width: auto;
   }
 
   .hero__visual {
@@ -4706,8 +4711,8 @@ button {
   }
 
   .hero__avatars img {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
   }
 
   .hero__avatars img:not(:first-child) {
@@ -4715,8 +4720,23 @@ button {
   }
 
   .hero__video-icon {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero__info {
+    gap: 8px;
+  }
+
+  .hero__patients-info {
+    min-width: 0;
+  }
+
+  .hero__patients-count,
+  .hero__patients-text,
+  .hero__video-title,
+  .hero__video-text {
+    line-height: 1.2;
   }
 
   .hero__play {
