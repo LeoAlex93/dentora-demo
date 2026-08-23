@@ -915,7 +915,7 @@
 }
 
 .doctors__photo--portrait img {
-  object-position: center 7%;
+  object-position: center top;
 }
 
 .doctors__content {
@@ -3184,7 +3184,7 @@ button {
   }
 
   .doctors__photo {
-    height: 280px;
+    height: 360px;
   }
 
   .doctors__next {
@@ -3483,7 +3483,7 @@ button {
   }
 
   .doctors__photo {
-    height: 250px;
+    height: 330px;
   }
 
   .doctors__next {
@@ -3510,6 +3510,7 @@ button {
 
   .footer__column {
     align-items: flex-start;
+    padding-left: clamp(24px, 5vw, 44px);
     text-align: left;
   }
 
@@ -3909,7 +3910,7 @@ button {
   }
 
   .doctors__photo {
-    height: 270px;
+    height: clamp(320px, 58vw, 420px);
   }
 
   .doctors__content {
@@ -4845,6 +4846,10 @@ button {
 
   .footer__inner {
     gap: 24px 10px;
+  }
+
+  .footer__column {
+    padding-left: 14px;
   }
 
   .footer__description {
