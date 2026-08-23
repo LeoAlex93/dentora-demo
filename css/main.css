@@ -514,6 +514,14 @@
   line-height: 1.4;
 }
 
+.appointment__demo-note {
+  grid-column: 1/-1;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
 .appointment__error {
   display: flex;
   align-items: center;
