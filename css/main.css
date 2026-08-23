@@ -4382,6 +4382,32 @@ button {
   .services__price {
     font-size: 15px;
   }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+@supports (overflow: clip) {
+    html,
+    body {
+      overflow-x: clip;
+    }
+}
+}
+
+@media (max-width: 767px) and (prefers-reduced-motion: no-preference) {
+  .reveal--left,
+  .reveal--right {
+    transform: translateY(24px);
+  }
+
+  .reveal--left.reveal--visible,
+  .reveal--right.reveal--visible {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 765px) {
