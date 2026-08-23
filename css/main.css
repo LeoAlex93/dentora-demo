@@ -4538,7 +4538,11 @@ button {
   }
 
   .footer__brand {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     grid-column: 1/-1;
+    gap: 18px;
   }
 
   .footer__column--contacts {
@@ -4557,6 +4561,17 @@ button {
   .footer__logo-icon {
     width: 36px;
     height: 36px;
+  }
+
+  .footer__logo {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+  }
+
+  .footer__description {
+    max-width: 170px;
+    margin: 0;
+    text-align: right;
   }
 
   .footer__logo-text strong {
@@ -4805,6 +4820,7 @@ button {
   }
 
   .footer__description {
+    max-width: 150px;
     font-size: 11.5px;
   }
 
