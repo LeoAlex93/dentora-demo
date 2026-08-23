@@ -914,6 +914,10 @@
   transition: transform 0.35s ease;
 }
 
+.doctors__photo--portrait img {
+  object-position: center 7%;
+}
+
 .doctors__content {
   display: flex;
   flex-direction: column;
@@ -3493,11 +3497,35 @@ button {
 
   .footer__brand {
     grid-column: 1/-1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     max-width: 100%;
+    gap: 24px;
   }
 
   .footer__column--contacts {
     grid-column: auto;
+  }
+
+  .footer__column {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer__nav {
+    align-items: flex-start;
+  }
+
+  .footer__logo {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+  }
+
+  .footer__description {
+    max-width: 220px;
+    margin: 0;
+    text-align: right;
   }
 
   .hero__inner {
@@ -3920,7 +3948,7 @@ button {
   }
 
   .footer__logo {
-    margin-bottom: 14px;
+    margin-bottom: 0;
   }
 
   .footer__logo-icon {
