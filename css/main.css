@@ -4533,11 +4533,14 @@ button {
   }
 
   .footer__inner {
-    grid-template-columns: 1fr;
-    gap: 26px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
   }
 
-  .footer__brand,
+  .footer__brand {
+    grid-column: 1/-1;
+  }
+
   .footer__column--contacts {
     grid-column: auto;
   }
@@ -4558,6 +4561,10 @@ button {
 
   .footer__logo-text strong {
     font-size: 19px;
+  }
+
+  .footer__contact:first-of-type {
+    font-size: 14px;
   }
 
   .footer__copyright,
@@ -4794,7 +4801,7 @@ button {
   }
 
   .footer__inner {
-    gap: 23px;
+    gap: 24px 10px;
   }
 
   .footer__description {
